@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e0f2f1;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background: linear-gradient(135deg, #00bcd4, #00838f);
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 1.5em; /* Reduced font size */
+  font-family: 'Poppins', sans-serif; /* Modern font */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500; /* Slightly lighter font weight */
+  font-family: 'Roboto', sans-serif; /* Clean font for links */
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Recipe List Styles */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+  border: 1px solid #b2dfdb;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-card h2 {
+  margin-top: 0;
+  color: #00796b;
+}
+
+.recipe-card p {
+  margin: 10px 0;
+  color: #004d40;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  padding: 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #b2dfdb;
+  outline: none;
+}
+
+input:focus, textarea:focus {
+  border-color: #00796b;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #00bcd4;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.9em;
+}
